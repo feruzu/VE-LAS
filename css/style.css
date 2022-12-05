@@ -1,0 +1,59 @@
+/* Fuentes */
+
+
+/* Variables */
+:root {
+    --fondo: #e0e0df;
+    --color-primario: #3a353f;
+    --violeta: #d395e0;
+    --titulo: ;
+    --titulos: 'Montserrat', sans-serif;
+    --parrafos: ;
+}
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    width: 100%;
+    background-color: var(--fondo);
+}
+
+.navbar-brand {
+    font-family: var(--titulos);
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+
+span {
+    color:var(--violeta);
+}
+
+.collapse.navbar-collapse {
+    justify-content: end;
+}
+
+nav.bg-velas {
+    background-color: var(--fondo);
+}
+
+nav.bg-velas ul li a {
+    color: var(--color-primario);
+    position: relative;
+    font-size: 20px;
+    font-family: var(--titulos);
+}
+
+nav.bg-velas ul li a:hover {
+    color: white;
+}
+
+.nav-link {
+    margin-inline: 10px;
+}
