@@ -78,7 +78,7 @@ nav.bg-velas ul li a:hover {
 }
 
 #hero .info {
-    padding-left: 40px;
+    padding-left: 60px;
 }
 
 #hero .info h1 {
@@ -102,4 +102,85 @@ nav.bg-velas ul li a:hover {
     color: var(--color-primario);
     font-size: 30px;
     font-weight: 700;
+}
+
+/* Nosotros */
+
+#nosotros {
+    width: 100%;
+    position: relative;
+    padding: 110px 0 100px;
+    text-align: center;
+}
+
+#nosotros h2 {
+    color: var(--color-primario);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#nosotros p {
+    font-size: 15px ;
+}
+
+#nosotros .row {
+    padding-top: 70px;
+}
+
+#nosotros .card {
+    border: none;
+    position: relative;
+    padding: 50px 20px 40px 20px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow:  20px 20px 60px #d9d9d9,
+                -20px -20px 60px #ffffff;
+    transition: .5s;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+
+#nosotros .card img {
+    width: 70px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.356);
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    left: 30px;
+}
+
+#nosotros h3 {
+    text-align: right;
+    color: var(--color-primario);
+    font-size: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#nosotros h4 {
+    color: var(--color-primario);
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+#nosotros .card a {
+    text-decoration: none;
+    color: var(--color-primarios);
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+
+#nosotros .card a:hover {
+    color: var(--color-verde);
+}
+
+
+#nosotros .card p {
+    text-align: left;
+    line-height: 26px;
 }
