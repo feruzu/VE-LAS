@@ -4,8 +4,8 @@
 /* Variables */
 :root {
     --fondo: #e0e0df;
-    --color-primario: #3a353f;
-    --violeta: #d395e0;
+    --color-primario: #3f3536;
+    --color-verde: #7e9f83;
     --titulo: ;
     --titulos: 'Montserrat', sans-serif;
     --parrafos: ;
@@ -19,7 +19,6 @@ html {
 }
 
 body {
-    font-size: 1.2rem;
     line-height: 1.5;
     width: 100%;
     background-color: var(--fondo);
@@ -31,8 +30,8 @@ body {
     letter-spacing: 10px;
 }
 
-span {
-    color:var(--violeta);
+.bg-velas span {
+    color: white;
 }
 
 .collapse.navbar-collapse {
@@ -56,4 +55,44 @@ nav.bg-velas ul li a:hover {
 
 .nav-link {
     margin-inline: 10px;
+}
+
+/* Hero */
+
+#hero {
+    padding: 150px 0;
+}
+
+#hero img {
+    border-radius: 4%;
+    width: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+#hero .info {
+    padding-left: 40px;
+}
+
+#hero .info h1 {
+    font-size: 50px;
+    color: var(--color-primario);
+    margin-bottom: 30px;
+}
+
+#hero .info span {
+    border-bottom: 8px solid var(--color-verde);
+}
+
+#hero .info p {
+    color: var(--color-primario);
+    font-size: 18px;
+    margin-bottom: 60px;
+
+}
+
+
+#hero .info .dest h2 {
+    color: var(--color-primario);
+    font-size: 30px;
+    font-weight: bold;
 }
