@@ -184,3 +184,50 @@ nav.bg-velas ul li a:hover {
     text-align: left;
     line-height: 26px;
 }
+
+/* Productos */
+
+#productos {
+    width: 100%;
+    position: relative;
+    text-align: left;
+    padding: 50px 0;
+}
+
+#productos h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--color-primario);
+    position: relative;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#productos img {
+    width: 100%;
+    border-radius: 4% 4% 0 0;
+}
+
+#productos .producto {
+    background-color: var(--fondo);
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#productos .producto .info-producto {
+    background: white;
+    padding: 15px;
+    transition: .6s;
+    border-radius: 0 0 4% 4%;
+}
+
+#productos .producto .info-producto:hover {
+    background-color: var(--color-verde);
+    color: #3f3536;
+}
+
+#productos .producto .info-producto p {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--color-primario);
+}
