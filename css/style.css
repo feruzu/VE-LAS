@@ -68,7 +68,6 @@ nav.bg-velas ul li a:hover {
     padding: 150px 0;
 }
 
-
 #hero img {
     max-width: 400px;
     margin: 0 auto;
@@ -182,15 +181,16 @@ nav.bg-velas ul li a:hover {
     line-height: 26px;
 }
 
-/* Productos */
+
+/* Carousel Productos*/
 
 #productos {
-    width: 100%;
-    position: relative;
-    text-align: left;
-    padding: 50px 0 100px 0;
+    margin: 90px 0 150px 0;
 }
 
+#productos .container {
+    padding: 40px 0;
+}
 
 #productos h2 {
     font-size: 40px;
@@ -199,72 +199,152 @@ nav.bg-velas ul li a:hover {
     position: relative;
     margin-bottom: 20px;
     text-align: center;
+    padding: 0 12px;
 }
 
-#productos article .producto {
-    margin-top: 60px;
+#productos p {
+    font-size: 15px;
+    text-align: center;
+    padding: 0 12px;
 }
 
-#productos img {
+.swiper {
+    width: 95%;
+    height: 95%;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+  .swiper-slide img {
+    display: block;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
-#productos .producto {
-    background-color: var(--fondo);
-    max-width: 300px;
+  #productos .card {
+    border-radius: 30px;
+    border: none;
+    max-width: 250px;
     margin: 0 auto;
-    margin-top: 60px;
 }
 
-#productos .producto .info-producto {
-    background: white;
-    padding: 15px;
-    transition: .6s;
-    border-radius: 0 0 20px 20px;
-}
-
-#productos .producto .info-producto:hover {
-    background-color: var(--color-verde);
-    color: #3f3536;
-}
-
-#productos .producto .info-producto p {
+#productos button {
     font-size: 15px;
-    font-weight: 700;
-    color: var(--color-primario);
+    font-weight: 600;
+    border: none;   
+    background:  var(--color-primario);
+    border-radius: 10px;
+    color: white;
+    padding: 8px 15px;
 }
+
+#productos button:hover {
+    opacity: 60%;
+}
+
+
+#productos button:active {
+    opacity: 100%;
+}
+
+.swiper .btn {
+    color: var(--color-primario);
+    height: 40px;
+    width: 40px;
+    background: white;
+    border-radius: 50%;
+    border: none;
+}
+
+.swiper .btn:active {
+    opacity: 60%;
+    background: white;
+}
+
+.swiper .btn::before,
+.swiper .btn::after {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#productos .info {
+    border: none;
+    padding: 15px;
+    text-align: left;
+    background: white;
+    border-radius: 20px;
+} 
+
+#productos .info p {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+#productos .info p {
+    font-weight: 600;
+    font-size: 15px;
+}
+    
+
+#productos .info h3 {
+    font-size: 19px;
+}
+
 
 /* Comentarios */
 
 #comentarios {
     text-align: center;
-    width: 100%;
+    width: 60%;
     position: relative;
     padding: 40px 0 100px;
     color: var(--color-primario);
+    margin: 0 auto;
     margin-bottom: 100px;
 }
 
 #comentarios .carousel-item {
-    background: var(--color-verde-claro) ;
-    padding: 100px 100px;
+    padding: 60px 60px;
     border-radius: 20px;
     color: var(--color-primario);
+}
+
+#comentarios .container .carousel-inner  {
+    border-radius: 50px;
+    background: linear-gradient(145deg, #b5bdb7, #d7e1d9);
+    box-shadow:  20px 20px 60px #abb3ad,
+                 -20px -20px 60px #e7f2e9;
 }
 
 #comentarios .carousel-item h3 {
     font-size: 30px;
     margin-bottom: 20px;
     font-weight: 700;
+    color: var(--color-primario);
 }
 
 #comentarios button {
     padding: 13px 25px;
     background: transparent;
     border-radius: 12px;
-    border: 2px solid black;
-    color: black;
+    border: 2px solid var(--color-primario);
+    color: var(--color-primario);
     font: 20px;
     font-weight: 700;
     transition: .4s;
@@ -272,7 +352,7 @@ nav.bg-velas ul li a:hover {
 }
 
 #comentarios button:hover {
-    background-color: black;
+    background-color: var(--color-primario);
     color: white;
     transform: scale(1.1);
 }
@@ -322,5 +402,10 @@ footer .container img:hover {
     text-align: center;
 }
 
+#comentarios {
+    width: 85%;
+}
+
 
 }
+
