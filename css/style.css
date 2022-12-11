@@ -289,21 +289,14 @@ nav.bg-velas ul li a:hover {
     text-align: left;
     background: white;
     border-radius: 20px;
-} 
-
-#productos .info p {
-    text-align: left;
-    margin-bottom: 5px;
-}
-
-#productos .info p {
-    font-weight: 600;
-    font-size: 15px;
-}
-    
+}    
 
 #productos .info h3 {
     font-size: 19px;
+}
+
+#productos button {
+    margin-top: 15px;
 }
 
 .swiper-pagination-bullet {
